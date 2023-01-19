@@ -1,0 +1,83 @@
+digraph G {
+	root39 [label="Block"]
+	root39 -> assign1;
+	assign1 [label="ASSIGNMENT"]
+	assign1 -> iden2;
+	iden2 [shape=box,label="Identifier: n"]
+	assign1 -> integer0;
+	integer0 [shape=box,label="Integer: 6"]
+	root39 -> assign4;
+	assign4 [label="ASSIGNMENT"]
+	assign4 -> iden5;
+	iden5 [shape=box,label="Identifier: f0"]
+	assign4 -> integer3;
+	integer3 [shape=box,label="Integer: 0"]
+	root39 -> assign7;
+	assign7 [label="ASSIGNMENT"]
+	assign7 -> iden8;
+	iden8 [shape=box,label="Identifier: f1"]
+	assign7 -> integer6;
+	integer6 [shape=box,label="Integer: 1"]
+	root39 -> assign10;
+	assign10 [label="ASSIGNMENT"]
+	assign10 -> iden11;
+	iden11 [shape=box,label="Identifier: i"]
+	assign10 -> integer9;
+	integer9 [shape=box,label="Integer: 0"]
+	root39 -> while38;
+	while38 [label="While"]
+	while38 -> bool12;
+	bool12 [shape=box,label="Boolean: True"]
+	while38 -> block37;
+	block37 [label="Block"]
+	block37 -> assign16;
+	assign16 [label="ASSIGNMENT"]
+	assign16 -> iden17;
+	iden17 [shape=box,label="Identifier: fi"]
+	assign16 -> plus15;
+	plus15 [label="PLUS"]
+	plus15 -> iden13;
+	iden13 [shape=box,label="Identifier: f0"]
+	plus15 -> iden14;
+	iden14 [shape=box,label="Identifier: f1"]
+	block37 -> assign19;
+	assign19 [label="ASSIGNMENT"]
+	assign19 -> iden20;
+	iden20 [shape=box,label="Identifier: f0"]
+	assign19 -> iden18;
+	iden18 [shape=box,label="Identifier: f1"]
+	block37 -> assign22;
+	assign22 [label="ASSIGNMENT"]
+	assign22 -> iden23;
+	iden23 [shape=box,label="Identifier: f1"]
+	assign22 -> iden21;
+	iden21 [shape=box,label="Identifier: fi"]
+	block37 -> assign27;
+	assign27 [label="ASSIGNMENT"]
+	assign27 -> iden28;
+	iden28 [shape=box,label="Identifier: i"]
+	assign27 -> plus26;
+	plus26 [label="PLUS"]
+	plus26 -> iden24;
+	iden24 [shape=box,label="Identifier: i"]
+	plus26 -> integer25;
+	integer25 [shape=box,label="Integer: 1"]
+	block37 -> if36;
+	if36 [label="If"]
+	if36 -> greaterthanequals31;
+	greaterthanequals31 [label="GREATERTHANEQUALS"]
+	greaterthanequals31 -> iden29;
+	iden29 [shape=box,label="Identifier: i"]
+	greaterthanequals31 -> iden30;
+	iden30 [shape=box,label="Identifier: n"]
+	if36 -> block35;
+	block35 [label="Block"]
+	block35 -> assign33;
+	assign33 [label="ASSIGNMENT"]
+	assign33 -> iden34;
+	iden34 [shape=box,label="Identifier: f"]
+	assign33 -> iden32;
+	iden32 [shape=box,label="Identifier: f0"]
+	block35 -> break35;
+	break35 [label="Break"]
+}

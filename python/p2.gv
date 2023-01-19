@@ -1,0 +1,135 @@
+digraph G {
+	root66 [label="Block"]
+	root66 -> assign1;
+	assign1 [label="ASSIGNMENT"]
+	assign1 -> iden2;
+	iden2 [shape=box,label="Identifier: a"]
+	assign1 -> bool0;
+	bool0 [shape=box,label="Boolean: True"]
+	root66 -> assign4;
+	assign4 [label="ASSIGNMENT"]
+	assign4 -> iden5;
+	iden5 [shape=box,label="Identifier: b"]
+	assign4 -> bool3;
+	bool3 [shape=box,label="Boolean: False"]
+	root66 -> assign7;
+	assign7 [label="ASSIGNMENT"]
+	assign7 -> iden8;
+	iden8 [shape=box,label="Identifier: x"]
+	assign7 -> integer6;
+	integer6 [shape=box,label="Integer: 7"]
+	root66 -> if47;
+	if47 [label="If"]
+	if47 -> iden9;
+	iden9 [shape=box,label="Identifier: a"]
+	if47 -> block46;
+	block46 [label="Block"]
+	block46 -> assign11;
+	assign11 [label="ASSIGNMENT"]
+	assign11 -> iden12;
+	iden12 [shape=box,label="Identifier: x"]
+	assign11 -> integer10;
+	integer10 [shape=box,label="Integer: 5"]
+	block46 -> if45;
+	if45 [label="If"]
+	if45 -> iden13;
+	iden13 [shape=box,label="Identifier: b"]
+	if45 -> block17;
+	block17 [label="Block"]
+	block17 -> assign15;
+	assign15 [label="ASSIGNMENT"]
+	assign15 -> iden16;
+	iden16 [shape=box,label="Identifier: y"]
+	assign15 -> integer14;
+	integer14 [shape=box,label="Integer: 4"]
+	if45 -> elif39;
+	elif39 [label="ElseIf"]
+	elif39 -> iden34;
+	iden34 [shape=box,label="Identifier: c"]
+	elif39 -> block38;
+	block38 [label="Block"]
+	block38 -> assign36;
+	assign36 [label="ASSIGNMENT"]
+	assign36 -> iden37;
+	iden37 [shape=box,label="Identifier: y"]
+	assign36 -> integer35;
+	integer35 [shape=box,label="Integer: 6"]
+	if45 -> elif33;
+	elif33 [label="ElseIf"]
+	elif33 -> iden24;
+	iden24 [shape=box,label="Identifier: b"]
+	elif33 -> block32;
+	block32 [label="Block"]
+	block32 -> assign26;
+	assign26 [label="ASSIGNMENT"]
+	assign26 -> iden27;
+	iden27 [shape=box,label="Identifier: y"]
+	assign26 -> integer25;
+	integer25 [shape=box,label="Integer: 4"]
+	block32 -> functioncall31;
+	functioncall31 [shape=box,label="FunctionCall: print"]
+	functioncall31 -> all;
+	all [label="Parameters"]
+	all -> iden28;
+	iden28 [shape=box,label="Identifier: f"]
+	all -> iden29;
+	iden29 [shape=box,label="Identifier: x"]
+	all -> iden30;
+	iden30 [shape=box,label="Identifier: a"]
+	if45 -> elif23;
+	elif23 [label="ElseIf"]
+	elif23 -> iden18;
+	iden18 [shape=box,label="Identifier: a"]
+	elif23 -> block22;
+	block22 [label="Block"]
+	block22 -> assign20;
+	assign20 [label="ASSIGNMENT"]
+	assign20 -> iden21;
+	iden21 [shape=box,label="Identifier: y"]
+	assign20 -> integer19;
+	integer19 [shape=box,label="Integer: 3"]
+	if45 -> block43;
+	block43 [label="Block"]
+	block43 -> assign41;
+	assign41 [label="ASSIGNMENT"]
+	assign41 -> iden42;
+	iden42 [shape=box,label="Identifier: y"]
+	assign41 -> integer40;
+	integer40 [shape=box,label="Integer: 2"]
+	root66 -> assign56;
+	assign56 [label="ASSIGNMENT"]
+	assign56 -> iden57;
+	iden57 [shape=box,label="Identifier: z"]
+	assign56 -> division55;
+	division55 [label="DIVISION"]
+	division55 -> paren53;
+	paren53 [label="Parenthesis"]
+	paren53 -> multiplication52;
+	multiplication52 [label="Multiplication"]
+	multiplication52 -> multiplication50;
+	multiplication50 [label="Multiplication"]
+	multiplication50 -> iden48;
+	iden48 [shape=box,label="Identifier: x"]
+	multiplication50 -> integer49;
+	integer49 [shape=box,label="Integer: 3"]
+	multiplication52 -> integer51;
+	integer51 [shape=box,label="Integer: 7"]
+	division55 -> iden54;
+	iden54 [shape=box,label="Identifier: y"]
+	root66 -> if65;
+	if65 [label="If"]
+	if65 -> greaterthan60;
+	greaterthan60 [label="GREATERTHAN"]
+	greaterthan60 -> iden58;
+	iden58 [shape=box,label="Identifier: z"]
+	greaterthan60 -> integer59;
+	integer59 [shape=box,label="Integer: 10"]
+	if65 -> block64;
+	block64 [label="Block"]
+	block64 -> assign62;
+	assign62 [label="ASSIGNMENT"]
+	assign62 -> iden63;
+	iden63 [shape=box,label="Identifier: y"]
+	assign62 -> integer61;
+	integer61 [shape=box,label="Integer: 5"]
+}
